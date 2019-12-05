@@ -48,6 +48,7 @@ function VRDisplay() {
 // {PointerEvent}
 
 
+
 var foo = 'hello';
 {
     var faz = 'hola';
@@ -207,6 +208,327 @@ for (let i = 0; i < arr7.length; i++) {
 }
 
 console.log('here');
+
+function Vegetable(name) {
+    this.name = name; // foo.name = name;
+}
+
+Vegetable.prototype.getName = function getName() {
+    console.log(this.name);
+}
+
+String.prototype.foo = function foo() {
+    console.log('Foo!!!');
+}
+
+var hello = 'world';
+hello.foo();
+console.log(hello);
+
+var foo = new Vegetable('bar');
+foo.getName();
+console.log(foo.name);
+
+var baz = new Vegetable('foo');
+baz.getName();
+console.log(baz.name);
+
+var carrot = new Vegetable('carrot');
+var bean = new Vegetable('bean');
+
+carrot.getName();
+bean.getName();
+
+function Vegetable(name) {
+    this.name = name; // foo.name = name;
+}
+
+Vegetable.prototype.getName = function getName() {
+    console.log(this.name);
+}
+
+class Vegetable2 {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var celery = new Vegetable2('celery');
+var kale = new Vegetable2('kale');
+
+celery.getName();
+kale.getName();
+
+class Vegetable3 {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var peas = new Vegetable3('peas');
+var garlic = new Vegetable3('garlic');
+
+peas.getName();
+garlic.getName();
+
+class Fruit {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var banana = new Fruit('banana');
+var apple = new Fruit('apple');
+
+banana.getName();
+apple.getName();
+
+class Fruit2 {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var strawberry = new Fruit2('strawberry');
+var watermelon = new Fruit2('watermelon');
+
+strawberry.getName();
+watermelon.getName();
+
+class Fruit3 {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var lemon = new Fruit3('lemon');
+var lime = new Fruit3('lime');
+
+lemon.getName();
+lime.getName();
+
+class Rupee {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var green = new Rupee('green');
+var red = new Rupee('red');
+var blue = new Rupee('blue');
+var purple = new Rupee('purple');
+var silver = new Rupee('silver');
+var gold = new Rupee('gold');
+
+green.getName();
+red.getName();
+blue.getName();
+purple.getName();
+silver.getName();
+gold.getName();
+
+class Mlp {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var earthP = new Mlp('earth pony');
+var pegasusP = new Mlp('pegasus pony');
+var unicornP = new Mlp('unicorn pony');
+var zebra = new Mlp('zebra');
+var hypoP = new Mlp('hypogriff');
+var griffP = new Mlp('griffon');
+var changP = new Mlp('changeling');
+var batP = new Mlp('bat pony')
+var alicP = new Mlp('alicorn pony');
+
+earthP.getName();
+pegasusP.getName();
+unicornP.getName();
+zebra.getName();
+hypoP.getName();
+griffP.getName();
+changP.getName();
+batP.getName();
+alicP.getName();
+
+class Pokemon {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var pikachu = new Pokemon('Pikachu');
+var bulbasaur = new Pokemon('Bulbasaur');
+var charmander = new Pokemon('Charmander');
+var squirtle = new Pokemon('Squirtle');
+var mewtwo = new Pokemon('Mewtwo');
+
+pikachu.getName();
+bulbasaur.getName();
+charmander.getName();
+squirtle.getName();
+mewtwo.getName();
+
+class Fairytail {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var natsu = new Fairytail('Natsu');
+var lucy = new Fairytail('Lucy');
+var happy = new Fairytail('Happy');
+var grey = new Fairytail('Grey');
+var erza = new Fairytail('Erza');
+var gajeel = new Fairytail('Gajeel');
+var porly = new Fairytail('Porlyusica');
+
+natsu.getName();
+lucy.getName();
+happy.getName();
+grey.getName();
+erza.getName();
+gajeel.getName();
+porly.getName();
+
+class DoctorWho {
+    constructor(name) {
+        this.name = name;
+    }
+    getName() {
+        console.log(this.name);
+    }
+}
+
+var doctor = new DoctorWho('The Doctor');
+var rose = new DoctorWho('Rose Tyler');
+var martha = new DoctorWho('Matha Jones');
+var donna = new DoctorWho('Donna Noble');
+var amy = new DoctorWho('Amelia Pond');
+var clara = new DoctorWho('Clara Oswald');
+var bill = new DoctorWho('Bill Potts');
+
+doctor.getName();
+rose.getName();
+martha.getName();
+donna.getName();
+amy.getName();
+clara.getName();
+bill.getName();
+
+
+console.log('Hello world!');
+var foo;
+console.log(foo);
+var bar = 'hello'; // data type? <-a string
+var boo = "world!"; // string 
+var foo2 = 1; // int
+var foo3 = []; // array literal
+var foo4 = {}; // object literal
+var foo5 = true; // bolean true/false
+// page 69
+// Don't use a reserved keywrod ie break, return, boolean
+// Don't start with a number ie var 9lives
+// Variables are case sensitive ie FOO !== foo
+// You can start with an underscore, most use an underscore to indicate a private variable
+
+// let const
+let bar2 = 'hola';
+let bar3 = 1;
+
+const bar4 = 'mundo';
+const bar5 = 6;
+
+bar = 'fool';
+bar2 = 'yo';
+// bar4 = 'broken'; can't redeclare a CONST
+console.log('message:', bar, bar2);
+
+/*
+multiline comment in javascript 
+so you can write more lines
+which makes it easier
+*/
+
+// single line comment
+/* multiline 
+comment */
+
+
+let baz = 'Hello y\all'; // escaping the character
+let baz2 = "Hello y'all"; // wrap with the opposite uote
+let baz3 = 'Hello "you guys"'; // wrap with the opposite quote
+
+// page 67
+let baz4 = 'foo';
+
+let baz5, baz6, baz7;
+console.log(baz5); // undefined
+
+baz5 = 'bar';
+console.log(baz5); // string bar
+baz6 = 'foo';
+baz7 = 'bar';
+
+console.log(baz6);
+
+
+let baz8 = 50, baz9 = 10;
+let baz10 = baz8 + baz9; // 15
+// let baz10 = 'baz8 + baz9'; // you can not declare the same variable twice
+
+console.log(baz10);
+
+let baz11 = baz10 = baz5;
+
+console.log(baz11, baz10, baz5);
+
+// page 76
+// addition "+" / concatenation operator
+// subtraction "-"
+// multiplication "*"
+// division "/"
+// increment "++""
+// decrement "--"
+// modulus "%"
+
+let yo = 'Hello ' + 'World!';
+//php $yo = 'Hello ' . 'World!';
+console.log(yo);
+let i = 2;
+i++;
+// i--;
+let yo2 = i++;
+console.log(yo2);
 
 // objects
 
