@@ -47,7 +47,26 @@ function VRDisplay() {
 }
 // {PointerEvent}
 
+// Loops
+for (let index = 0; index < 10; index++) {
+    const element = index;
+    console.log(element);
+}
 
+
+// initialization, condition, itiriation
+var i = 0;
+while (i < 10) {// is true 
+    // do stuff
+    console.log(i);
+
+    i++;
+}
+var notAgree = true;
+while (!notAgreed) {
+    // stuff
+}
+while (conditon);
 
 var foo = 'hello';
 {
