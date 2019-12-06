@@ -475,7 +475,7 @@ var foo3 = []; // array literal
 var foo4 = {}; // object literal
 var foo5 = true; // bolean true/false
 // page 69
-// Don't use a reserved keywrod ie break, return, boolean
+// Don't use a reserved keyword ie break, return, boolean
 // Don't start with a number ie var 9lives
 // Variables are case sensitive ie FOO !== foo
 // You can start with an underscore, most use an underscore to indicate a private variable
