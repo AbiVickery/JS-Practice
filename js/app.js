@@ -723,3 +723,30 @@ function Hotel(name, rooms, booked) {
 var quayHotel = new Hotel('Quay', 40, 25);
 console.log(quayHotel.rooms);
 console.log(quayHotel.checkAvailability());
+
+// To save a game in JavaScript:
+/*
+function save() {
+    // we make the object from things that we want to save
+    var save = {
+        player1: player,
+        inventory1: inventory,
+        boss1: boss,
+    }
+    // we save it to local storage
+    localStorage.setItem("save", JSON.stringify(save));
+}
+
+function load() {
+
+    // Here we make a variable from a save file
+    var savegame = JSON.parse(localStorage.getItem("save"));
+    // check if it exists
+    if (savegame != null && savegame != undefined) {
+        // update our inventory and player object
+        inventory = savegame.inventory1;
+        player = savegame.player1;
+    }
+}
+*/
+
